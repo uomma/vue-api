@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>api</title>
         <!-- Axios -->
-        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-        <!-- Axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- Axios -->
 </head>
 
 <body>
 
     <div id="app">
-        <div>{{message}}</div>
+        <div v-for="(email, index) in emails">{{email}}</div>
     </div>
 
 
@@ -21,6 +21,7 @@
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <!--Vue from CDN-->
     <script src="main.js"></script>
+    <script src="email.js"></script>
 </body>
 
 </html>
