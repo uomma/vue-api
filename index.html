@@ -8,12 +8,16 @@
         <!-- Axios -->
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <!-- Axios -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <div id="app">
-        <div v-for="(email, index) in emails">{{email}}</div>
+    <div id="app" v-cloak>
+        <div  >
+            <div class="container" v-for="(email) in emails">{{email}}</div>
+
+        </div>
     </div>
 
 
